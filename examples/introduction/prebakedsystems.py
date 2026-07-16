@@ -25,7 +25,8 @@ from matplotlib.pyplot import show
 system = futures_system()
 print(system.accounts.portfolio().sharpe())
 system.accounts.portfolio().curve().plot()
-show()
+import matplotlib.pyplot as plt
+plt.savefig("prebakedsystems_1.png")
 """
 Same for estimated system
 """
@@ -36,7 +37,7 @@ system = futures_system()
 print(system.accounts.portfolio().sharpe())
 system.accounts.portfolio().curve().plot()
 system.cache.pickle("private.this_system_name.pck")
-show()
+plt.savefig("prebakedsystems_2.png")
 
 del system  # just to make sure
 system = futures_system()
