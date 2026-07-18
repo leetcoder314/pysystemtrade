@@ -1,0 +1,43 @@
+Configuring sim logging
+csvFuturesSimData object with 252 instruments
+['CAD5', 'OMX', 'US3', 'COAL-GEORDIE', 'SHATZ', 'EURCHF', 'FEEDCOW', 'SP500_micro', 'FTSECHINAA', 'AEX_mini', 'VIX', 'COPPER-micro', 'HANGENT', 'ZAR', 'BITCOIN', 'JGB-SGX-mini', 'SP500', 'BRENT-LAST', 'WHEAT', 'COFFEE', 'VNKI', 'EUROSTX-LARGE', 'US5', 'WHEAT_ICE', 'MSCIWORLD', 'DOW', 'SGD', 'MSCIEAFA', 'EU-CONSTRUCTION', 'EU-BANKS', 'GICS', 'BOBL', 'MILKDRY', 'SGD_mini', 'CHEESE', 'JPY_mini', 'MSCIASIA', 'EU-DIV30', 'BOVESPA', 'WHEY', 'COPPER-mini', 'US10U', 'CNH-onshore', 'ROBUSTA', 'GASOILINE_micro', 'HIGHYIELD', 'SGX', 'CH10', 'COPPER', 'GAS_US_mini', 'BUND', 'GOLD-mini', 'EU-DJ-TECH', 'FTSE100', 'BBCOMM', 'OAT', 'AUD', 'GILT', 'JGB', 'KRWUSD_mini', 'US30', 'EU-HEALTH', 'PLAT', 'EUA', 'DOW_mini', 'MILLWHEAT', 'EPRA-EUROPE', 'GOLD', 'FED', 'US-TECH', 'SOYOIL', 'TWD-mini', 'NIKKEI400', 'FTSEINDO', 'WHEAT_mini', 'EURAUD', 'IRS', 'CAD_micro', 'EU-BASIC', 'RUSSELL', 'SUGAR16', 'EU-INSURE', 'CAD10', 'COCOA_LDN', 'EURIBOR', 'EU-MID', 'TOPIX', 'FTSETAIWAN', 'US-FINANCE', 'CLP', 'MILKWET', 'EUROSTX', 'US10', 'CANOLA', 'KR10', 'CHF', 'NASDAQ', 'FTSEVIET', 'FTSE250', 'KOSPI_mini', 'CAC', 'SEK', 'SOYMEAL', 'MXP', 'GASOIL', 'SMI', 'EUR_micro', 'ZINC_LME', 'HEATOIL-ICE', 'MSCITAIWAN', 'US-ENERGY', 'US-REALESTATE', 'GBPJPY', 'BRE', 'SILVER', 'US-INDUSTRY', 'CZK', 'BRENT_W', 'BUXL', 'BTP3', 'US2', 'US-DISCRETE', 'DX', 'EU-DJ-OIL', 'SP400', 'V2X', 'OJ', 'EURCAD', 'HANG_mini', 'NIKKEI', 'CHINAA-CON', 'NOK', 'EU-OIL', 'AEX', 'NICKEL_LME', 'EU-TRAVEL', 'KOSDAQ', 'US-STAPLES', 'SUGAR11', 'AUD_micro', 'GASOILINE_ICE', 'SUGAR_WHITE', 'EUR_mini', 'ETHER-micro', 'OATIES', 'US-MATERIAL', 'DJSTX-SMALL', 'SONIA3', 'GOLD_micro', 'HOUSE-US', 'US-HEALTH', 'EU-MEDIA', 'MSCIEMASIA', 'HANGTECH', 'VIX_mini', 'JPY', 'RUSSELL_mini', 'HEATOIL', 'CHFJPY', 'RUBBER', 'CAD', 'STEEL', 'TIN_LME', 'SOFR', 'CHF_micro', 'SOYBEAN', 'PLN', 'EU-UTILS', 'NZD', 'EU-CHEM', 'CORN', 'GAS-LAST', 'KR3', 'GBP_micro', 'JGB-mini', 'LEANHOG', 'GAS-PEN', 'ETHANOL', 'CAD2', 'PALLAD', 'CRUDE_ICE', 'RUR', 'COPPER_LME', 'MUMMY', 'RICE', 'AUDJPY', 'EU-FOOD', 'SWISSLEAD', 'COAL', 'SPI200', 'EURIBOR-ICE', 'IBEX', 'EU-RETAIL', 'FANG', 'BONO', 'CRUDE_W_mini', 'EUROSTX200-LARGE', 'IBEX_mini', 'SMI-MID', 'DAX', 'CRUDE_W', 'GASOILINE', 'IG', 'EUR', 'EU-HOUSE', 'KRWUSD', 'IRON', 'COCOA', 'HANGENT_mini', 'SARONA', 'LIVECOW', 'ETHEREUM', 'GBP', 'US-UTILS', 'CORN_mini', 'HANG', 'MILK', 'LEAD_LME', 'EUROSTX-SMALL', 'US20', 'EU-DJ-TELECOM', 'CNH', 'BB3M', 'EURO600', 'MIB', 'COTTON', 'SOYBEAN_mini', 'EU-REALESTATE', 'MSCISING', 'INR', 'EU-TECH', 'KOSPI', 'R1000', 'NASDAQ_micro', 'BTP', 'FTSECHINAH', 'ALUMINIUM', 'GAS_US', 'TWD', 'GBPCHF', 'CRUDE_W_micro', 'US-PROPERTY', 'COTTON2', 'BUTTER', 'LUMBER-new', 'EU-DJ-UTIL', 'EU-AUTO', 'ALUMINIUM_LME', 'YENEUR', 'JP-REALESTATE', 'REDWHEAT', 'GBPEUR']
+index
+2024-03-28 17:00:00    96.415
+2024-03-28 18:00:00    96.415
+2024-03-28 19:00:00    96.410
+2024-03-28 20:00:00    96.405
+2024-03-28 23:00:00    96.405
+Name: price, dtype: float64
+index
+2006-01-26 23:00:00    107.85
+2006-01-27 23:00:00    107.52
+2006-01-30 23:00:00    107.38
+2006-01-31 23:00:00    107.36
+2006-02-01 23:00:00    107.31
+                        ...
+2024-03-27 17:00:00     16.05
+2024-03-27 18:00:00     16.00
+2024-03-27 19:00:00     16.00
+2024-03-27 20:00:00     16.00
+2024-03-27 23:00:00     16.00
+Name: price, Length: 58650, dtype: float64
+['CAD5', 'OMX', 'US3', 'COAL-GEORDIE', 'SHATZ', 'EURCHF', 'FEEDCOW', 'SP500_micro', 'FTSECHINAA', 'AEX_mini', 'VIX', 'COPPER-micro', 'HANGENT', 'ZAR', 'BITCOIN', 'JGB-SGX-mini', 'SP500', 'BRENT-LAST', 'WHEAT', 'COFFEE', 'VNKI', 'EUROSTX-LARGE', 'US5', 'WHEAT_ICE', 'MSCIWORLD', 'DOW', 'SGD', 'MSCIEAFA', 'EU-CONSTRUCTION', 'EU-BANKS', 'GICS', 'BOBL', 'MILKDRY', 'SGD_mini', 'CHEESE', 'JPY_mini', 'MSCIASIA', 'EU-DIV30', 'BOVESPA', 'WHEY', 'COPPER-mini', 'US10U', 'CNH-onshore', 'ROBUSTA', 'GASOILINE_micro', 'HIGHYIELD', 'SGX', 'CH10', 'COPPER', 'GAS_US_mini', 'BUND', 'GOLD-mini', 'EU-DJ-TECH', 'FTSE100', 'BBCOMM', 'OAT', 'AUD', 'GILT', 'JGB', 'KRWUSD_mini', 'US30', 'EU-HEALTH', 'PLAT', 'EUA', 'DOW_mini', 'MILLWHEAT', 'EPRA-EUROPE', 'GOLD', 'FED', 'US-TECH', 'SOYOIL', 'TWD-mini', 'NIKKEI400', 'FTSEINDO', 'WHEAT_mini', 'EURAUD', 'IRS', 'CAD_micro', 'EU-BASIC', 'RUSSELL', 'SUGAR16', 'EU-INSURE', 'CAD10', 'COCOA_LDN', 'EURIBOR', 'EU-MID', 'TOPIX', 'FTSETAIWAN', 'US-FINANCE', 'CLP', 'MILKWET', 'EUROSTX', 'US10', 'CANOLA', 'KR10', 'CHF', 'NASDAQ', 'FTSEVIET', 'FTSE250', 'KOSPI_mini', 'CAC', 'SEK', 'SOYMEAL', 'MXP', 'GASOIL', 'SMI', 'EUR_micro', 'ZINC_LME', 'HEATOIL-ICE', 'MSCITAIWAN', 'US-ENERGY', 'US-REALESTATE', 'GBPJPY', 'BRE', 'SILVER', 'US-INDUSTRY', 'CZK', 'BRENT_W', 'BUXL', 'BTP3', 'US2', 'US-DISCRETE', 'DX', 'EU-DJ-OIL', 'SP400', 'V2X', 'OJ', 'EURCAD', 'HANG_mini', 'NIKKEI', 'CHINAA-CON', 'NOK', 'EU-OIL', 'AEX', 'NICKEL_LME', 'EU-TRAVEL', 'KOSDAQ', 'US-STAPLES', 'SUGAR11', 'AUD_micro', 'GASOILINE_ICE', 'SUGAR_WHITE', 'EUR_mini', 'ETHER-micro', 'OATIES', 'US-MATERIAL', 'DJSTX-SMALL', 'SONIA3', 'GOLD_micro', 'HOUSE-US', 'US-HEALTH', 'EU-MEDIA', 'MSCIEMASIA', 'HANGTECH', 'VIX_mini', 'JPY', 'RUSSELL_mini', 'HEATOIL', 'CHFJPY', 'RUBBER', 'CAD', 'STEEL', 'TIN_LME', 'SOFR', 'CHF_micro', 'SOYBEAN', 'PLN', 'EU-UTILS', 'NZD', 'EU-CHEM', 'CORN', 'GAS-LAST', 'KR3', 'GBP_micro', 'JGB-mini', 'LEANHOG', 'GAS-PEN', 'ETHANOL', 'CAD2', 'PALLAD', 'CRUDE_ICE', 'RUR', 'COPPER_LME', 'MUMMY', 'RICE', 'AUDJPY', 'EU-FOOD', 'SWISSLEAD', 'COAL', 'SPI200', 'EURIBOR-ICE', 'IBEX', 'EU-RETAIL', 'FANG', 'BONO', 'CRUDE_W_mini', 'EUROSTX200-LARGE', 'IBEX_mini', 'SMI-MID', 'DAX', 'CRUDE_W', 'GASOILINE', 'IG', 'EUR', 'EU-HOUSE', 'KRWUSD', 'IRON', 'COCOA', 'HANGENT_mini', 'SARONA', 'LIVECOW', 'ETHEREUM', 'GBP', 'US-UTILS', 'CORN_mini', 'HANG', 'MILK', 'LEAD_LME', 'EUROSTX-SMALL', 'US20', 'EU-DJ-TELECOM', 'CNH', 'BB3M', 'EURO600', 'MIB', 'COTTON', 'SOYBEAN_mini', 'EU-REALESTATE', 'MSCISING', 'INR', 'EU-TECH', 'KOSPI', 'R1000', 'NASDAQ_micro', 'BTP', 'FTSECHINAH', 'ALUMINIUM', 'GAS_US', 'TWD', 'GBPCHF', 'CRUDE_W_micro', 'US-PROPERTY', 'COTTON2', 'BUTTER', 'LUMBER-new', 'EU-DJ-UTIL', 'EU-AUTO', 'ALUMINIUM_LME', 'YENEUR', 'JP-REALESTATE', 'REDWHEAT', 'GBPEUR']
+futuresInstrumentWithMetaData(instrument=MUMMY, meta_data={'Description': 'TSE Mothers Index', 'Pointsize': 1000.0, 'Currency': 'JPY', 'AssetClass': 'Equity', 'PerBlock': 50.0, 'Percentage': 0.0, 'PerTrade': 0, 'Region': 'ASIA'})
+                      PRICE   CARRY PRICE_CONTRACT CARRY_CONTRACT
+index
+2024-03-28 16:00:00  96.425  96.405       20261200       20260900
+2024-03-28 17:00:00  96.415  96.395       20261200       20260900
+2024-03-28 18:00:00  96.415  96.395       20261200       20260900
+2024-03-28 19:00:00  96.410  96.390       20261200       20260900
+2024-03-28 20:00:00  96.405  96.385       20261200       20260900
+2024-03-28 23:00:00  96.405  96.390       20261200       20260900
+index
+2024-03-21   -6.915068
+2024-03-22   -6.888829
+2024-03-25   -6.872448
+2024-03-26   -6.875358
+2024-03-27   -6.896529
+Freq: B, Name: price, dtype: float64
+2026-07-16 10:40:15 INFO matplotlib.font_manager Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Non-scalable fonts are not supported
+2026-07-16 10:40:15 INFO matplotlib.font_manager generated new fontManager
+[[('min', '-9.148'), ('max', '4.989'), ('median', '0.00169'), ('mean', '0.0204'), ('std', '0.6539'), ('skew', '-1.739'), ('ann_mean', '5.222'), ('ann_std', '10.46'), ('sharpe', '0.4992'), ('sortino', '0.5043'), ('avg_drawdown', '-14.65'), ('time_in_drawdown', '0.9517'), ('calmar', '0.1249'), ('avg_return_to_drawdown', '0.3565'), ('avg_loss', '-0.3737'), ('avg_gain', '0.3616'), ('gaintolossratio', '0.9676'), ('profitfactor', '1.126'), ('hitrate', '0.5378'), ('t_stat', '2.148'), ('p_value', '0.03178')], ('You can also plot / print:', ['rolling_ann_std', 'drawdown', 'curve', 'percent'])]

@@ -1,0 +1,837 @@
+Configuring sim logging
+{'rule0': TradingRule; function: <function ewmac_forecast_with_defaults at 0x7f6678e7e700>, data: data.daily_prices (args: {}) and other_args: }
+{'ewmac': TradingRule; function: <function ewmac_forecast_with_defaults at 0x7f6678e7e700>, data: data.daily_prices (args: {}) and other_args: }
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+System base_system with .config, .data, and .stages: rules
+2026-07-16 10:36:56 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:36:56 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:36:56 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:36:56 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac
+index
+2024-03-22   -0.349853
+2024-03-25   -0.378965
+2024-03-26   -0.394422
+2024-03-27   -0.381021
+2024-03-28   -0.378662
+Freq: B, Name: price, dtype: float64
+TradingRule; function: <function ewmac_forecast_with_defaults at 0x7f6678e7e700>, data: data.daily_prices (args: {}) and other_args: Lfast, Lslow
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:36:57 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:36:57 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:36:57 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:36:57 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:36:57 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:36:57 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:36:57 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:36:57 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:36:58 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:36:58 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:36:58 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:36:58 DEBUG base_system {'stage': 'forecastScaleCap'} Getting cross sectional forecasts for scalar calculation for ewmac32 over SOFR
+2026-07-16 10:36:58 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+index
+2024-03-22    2.734996
+2024-03-25    2.735231
+2024-03-26    2.735465
+2024-03-27    2.735700
+2024-03-28    2.735935
+Freq: B, Name: SOFR, dtype: float64
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:36:58 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:36:58 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:36:58 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:36:58 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+2026-07-16 10:36:58 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+index
+2024-03-22   -0.927110
+2024-03-25   -1.004257
+2024-03-26   -1.045217
+2024-03-27   -1.009705
+2024-03-28   -1.003454
+Freq: B, dtype: float64
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:37:00 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:37:00 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:37:00 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:37:00 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating forecast weights for SOFR
+2026-07-16 10:37:00 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} WARNING: No forecast weights  - using equal weights of 0.500 over all 2 trading rules in system
+2026-07-16 10:37:00 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+2026-07-16 10:37:00 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+2026-07-16 10:37:00 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac8
+2026-07-16 10:37:00 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac8
+2026-07-16 10:37:01 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} You need an accounts stage in the system to estimate forecast costs for SOFR ewmac32. Using costs of zero
+2026-07-16 10:37:01 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} You need an accounts stage in the system to estimate forecast costs for SOFR ewmac8. Using costs of zero
+2026-07-16 10:37:01 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SOFR
+            ewmac32  ewmac8
+index
+2024-03-22      0.5     0.5
+2024-03-25      0.5     0.5
+2024-03-26      0.5     0.5
+2024-03-27      0.5     0.5
+2024-03-28      0.5     0.5
+2026-07-16 10:37:01 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Using fixed FDM multiplier of 1.000 for SOFR
+index
+2024-03-22    1.0
+2024-03-25    1.0
+2024-03-26    1.0
+2024-03-27    1.0
+2024-03-28    1.0
+Freq: B, dtype: float64
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:37:01 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:37:01 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:37:01 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:37:01 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating forecast weights for US10
+2026-07-16 10:37:01 INFO base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating raw forecast weights for US10
+2026-07-16 10:37:01 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac32
+2026-07-16 10:37:01 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac32
+2026-07-16 10:37:02 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+2026-07-16 10:37:02 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+2026-07-16 10:37:03 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500_micro'} Calculating capped forecast for SP500_micro ewmac32
+2026-07-16 10:37:03 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500_micro'} Calculating raw forecast SP500_micro for ewmac32
+2026-07-16 10:37:04 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac32
+2026-07-16 10:37:04 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac32
+2026-07-16 10:37:05 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:37:05 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:37:05 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily volatility for US10
+2026-07-16 10:37:05 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:37:06 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac8
+2026-07-16 10:37:06 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac8
+2026-07-16 10:37:07 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac8
+2026-07-16 10:37:07 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac8
+2026-07-16 10:37:08 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500_micro'} Calculating capped forecast for SP500_micro ewmac8
+2026-07-16 10:37:08 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500_micro'} Calculating raw forecast SP500_micro for ewmac8
+2026-07-16 10:37:08 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac8
+2026-07-16 10:37:08 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac8
+2026-07-16 10:37:09 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for US10
+2026-07-16 10:37:09 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:37:10 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:37:10 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily volatility for CORN
+2026-07-16 10:37:10 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:37:11 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for CORN
+2026-07-16 10:37:11 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:37:11 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:37:12 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily volatility for SOFR
+2026-07-16 10:37:12 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:37:12 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SOFR
+2026-07-16 10:37:12 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:37:12 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:37:13 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily volatility for SP500_micro
+2026-07-16 10:37:13 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:37:13 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SP500_micro
+2026-07-16 10:37:13 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'CORN'} Calculating pandl for instrument forecast for CORN ewmac32
+2026-07-16 10:37:13 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:37:14 DEBUG base_system {'stage': 'positionSize'} Getting vol target
+2026-07-16 10:37:14 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'CORN'} Calculating pandl for instrument forecast for CORN ewmac8
+2026-07-16 10:37:14 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:37:20 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SOFR'} Calculating pandl for instrument forecast for SOFR ewmac32
+2026-07-16 10:37:20 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:37:21 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SOFR'} Calculating pandl for instrument forecast for SOFR ewmac8
+2026-07-16 10:37:21 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:37:26 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SP500_micro'} Calculating pandl for instrument forecast for SP500_micro ewmac32
+2026-07-16 10:37:26 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:37:26 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SP500_micro'} Calculating pandl for instrument forecast for SP500_micro ewmac8
+2026-07-16 10:37:26 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:37:31 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'US10'} Calculating pandl for instrument forecast for US10 ewmac32
+2026-07-16 10:37:31 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:37:32 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'US10'} Calculating pandl for instrument forecast for US10 ewmac8
+2026-07-16 10:37:32 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:37:37 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Using pooled gross returns
+2026-07-16 10:37:37 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Using pooled turnover cost SR for US10
+2026-07-16 10:37:37 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Applying cost multiplier of 2.000000
+  [--------------------------------------------------------------------------------] 0.0% Optimising weights (0.0/0.0/0.0 secs left/elapsed/total)  [=------------------------------------------------------------------------------] 2.0% Optimising weights (0.0/0.0/0.0 secs left/elapsed/total)  [===----------------------------------------------------------------------------] 3.9% Optimising weights (0.2/0.0/0.2 secs left/elapsed/total)  [====---------------------------------------------------------------------------] 5.9% Optimising weights (0.2/0.0/0.2 secs left/elapsed/total)  [======-------------------------------------------------------------------------] 7.8% Optimising weights (0.2/0.0/0.2 secs left/elapsed/total)  [=======------------------------------------------------------------------------] 9.8% Optimising weights (0.2/0.1/0.3 secs left/elapsed/total)  [=========----------------------------------------------------------------------] 11.8% Optimising weights (0.2/0.1/0.3 secs left/elapsed/total)  [==========---------------------------------------------------------------------] 13.7% Optimising weights (0.2/0.1/0.3 secs left/elapsed/total)  [============-------------------------------------------------------------------] 15.7% Optimising weights (0.2/0.1/0.3 secs left/elapsed/total)  [==============-----------------------------------------------------------------] 17.6% Optimising weights (0.3/0.1/0.3 secs left/elapsed/total)  [===============----------------------------------------------------------------] 19.6% Optimising weights (0.3/0.1/0.4 secs left/elapsed/total)  [=================--------------------------------------------------------------] 21.6% Optimising weights (0.3/0.1/0.4 secs left/elapsed/total)  [==================-------------------------------------------------------------] 23.5% Optimising weights (0.3/0.1/0.4 secs left/elapsed/total)  [====================-----------------------------------------------------------] 25.5% Optimising weights (0.3/0.1/0.4 secs left/elapsed/total)  [=====================----------------------------------------------------------] 27.5% Optimising weights (0.3/0.1/0.4 secs left/elapsed/total)  [=======================--------------------------------------------------------] 29.4% Optimising weights (0.3/0.1/0.4 secs left/elapsed/total)  [=========================------------------------------------------------------] 31.4% Optimising weights (0.3/0.2/0.4 secs left/elapsed/total)  [==========================-----------------------------------------------------] 33.3% Optimising weights (0.3/0.2/0.4 secs left/elapsed/total)  [============================---------------------------------------------------] 35.3% Optimising weights (0.3/0.2/0.4 secs left/elapsed/total)  [=============================--------------------------------------------------] 37.3% Optimising weights (0.2/0.2/0.4 secs left/elapsed/total)  [===============================------------------------------------------------] 39.2% Optimising weights (0.2/0.2/0.4 secs left/elapsed/total)  [================================-----------------------------------------------] 41.2% Optimising weights (0.2/0.2/0.4 secs left/elapsed/total)  [==================================---------------------------------------------] 43.1% Optimising weights (0.2/0.2/0.4 secs left/elapsed/total)  [====================================-------------------------------------------] 45.1% Optimising weights (0.2/0.2/0.4 secs left/elapsed/total)  [=====================================------------------------------------------] 47.1% Optimising weights (0.2/0.2/0.4 secs left/elapsed/total)  [=======================================----------------------------------------] 49.0% Optimising weights (0.2/0.2/0.4 secs left/elapsed/total)  [========================================---------------------------------------] 51.0% Optimising weights (0.2/0.2/0.5 secs left/elapsed/total)  [==========================================-------------------------------------] 52.9% Optimising weights (0.2/0.3/0.5 secs left/elapsed/total)  [===========================================------------------------------------] 54.9% Optimising weights (0.2/0.3/0.5 secs left/elapsed/total)  [=============================================----------------------------------] 56.9% Optimising weights (0.2/0.3/0.5 secs left/elapsed/total)  [===============================================--------------------------------] 58.8% Optimising weights (0.2/0.3/0.5 secs left/elapsed/total)  [================================================-------------------------------] 60.8% Optimising weights (0.2/0.3/0.5 secs left/elapsed/total)  [==================================================-----------------------------] 62.7% Optimising weights (0.2/0.3/0.5 secs left/elapsed/total)  [===================================================----------------------------] 64.7% Optimising weights (0.2/0.3/0.5 secs left/elapsed/total)  [=====================================================--------------------------] 66.7% Optimising weights (0.2/0.3/0.5 secs left/elapsed/total)  [======================================================-------------------------] 68.6% Optimising weights (0.1/0.3/0.5 secs left/elapsed/total)  [========================================================-----------------------] 70.6% Optimising weights (0.1/0.3/0.5 secs left/elapsed/total)  [==========================================================---------------------] 72.5% Optimising weights (0.1/0.3/0.5 secs left/elapsed/total)  [===========================================================--------------------] 74.5% Optimising weights (0.1/0.4/0.5 secs left/elapsed/total)  [=============================================================------------------] 76.5% Optimising weights (0.1/0.4/0.5 secs left/elapsed/total)  [==============================================================-----------------] 78.4% Optimising weights (0.1/0.4/0.5 secs left/elapsed/total)  [================================================================---------------] 80.4% Optimising weights (0.1/0.4/0.5 secs left/elapsed/total)  [=================================================================--------------] 82.4% Optimising weights (0.1/0.4/0.5 secs left/elapsed/total)  [===================================================================------------] 84.3% Optimising weights (0.1/0.4/0.5 secs left/elapsed/total)  [=====================================================================----------] 86.3% Optimising weights (0.1/0.4/0.5 secs left/elapsed/total)  [======================================================================---------] 88.2% Optimising weights (0.1/0.4/0.5 secs left/elapsed/total)  [========================================================================-------] 90.2% Optimising weights (0.0/0.4/0.5 secs left/elapsed/total)  [=========================================================================------] 92.2% Optimising weights (0.0/0.4/0.5 secs left/elapsed/total)  [===========================================================================----] 94.1% Optimising weights (0.0/0.5/0.5 secs left/elapsed/total)  [============================================================================---] 96.1% Optimising weights (0.0/0.5/0.5 secs left/elapsed/total)  [==============================================================================-] 98.0% Optimising weights (0.0/0.5/0.5 secs left/elapsed/total)  [================================================================================] 100.0% Optimising weights (0.0/0.5/0.5 secs left/elapsed/total)
+2026-07-16 10:37:38 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for US10
+             ewmac32    ewmac8
+index
+2024-03-22  0.859162  0.140838
+2024-03-25  0.859153  0.140847
+2024-03-26  0.859144  0.140856
+2024-03-27  0.859136  0.140864
+2024-03-28  0.859127  0.140873
+2026-07-16 10:37:38 INFO base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating forecast div multiplier for US10
+2026-07-16 10:37:38 INFO base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating forecast correlations over CORN, SOFR, SP500_micro, US10
+  [--------------------------------------------------------------------------------] 0.0% Estimating correlations (0.0/0.0/0.0 secs left/elapsed/total)  [=------------------------------------------------------------------------------] 2.0% Estimating correlations (0.0/0.0/0.0 secs left/elapsed/total)  [===----------------------------------------------------------------------------] 3.9% Estimating correlations (0.0/0.0/0.0 secs left/elapsed/total)  [====---------------------------------------------------------------------------] 5.9% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [======-------------------------------------------------------------------------] 7.8% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=======------------------------------------------------------------------------] 9.8% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=========----------------------------------------------------------------------] 11.8% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [==========---------------------------------------------------------------------] 13.7% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [============-------------------------------------------------------------------] 15.7% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [==============-----------------------------------------------------------------] 17.6% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [===============----------------------------------------------------------------] 19.6% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=================--------------------------------------------------------------] 21.6% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [==================-------------------------------------------------------------] 23.5% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [====================-----------------------------------------------------------] 25.5% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=====================----------------------------------------------------------] 27.5% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=======================--------------------------------------------------------] 29.4% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=========================------------------------------------------------------] 31.4% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [==========================-----------------------------------------------------] 33.3% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [============================---------------------------------------------------] 35.3% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=============================--------------------------------------------------] 37.3% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [===============================------------------------------------------------] 39.2% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [================================-----------------------------------------------] 41.2% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [==================================---------------------------------------------] 43.1% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [====================================-------------------------------------------] 45.1% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=====================================------------------------------------------] 47.1% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=======================================----------------------------------------] 49.0% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [========================================---------------------------------------] 51.0% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [==========================================-------------------------------------] 52.9% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===========================================------------------------------------] 54.9% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=============================================----------------------------------] 56.9% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===============================================--------------------------------] 58.8% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [================================================-------------------------------] 60.8% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [==================================================-----------------------------] 62.7% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===================================================----------------------------] 64.7% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=====================================================--------------------------] 66.7% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [======================================================-------------------------] 68.6% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [========================================================-----------------------] 70.6% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [==========================================================---------------------] 72.5% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===========================================================--------------------] 74.5% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=============================================================------------------] 76.5% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [==============================================================-----------------] 78.4% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [================================================================---------------] 80.4% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=================================================================--------------] 82.4% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===================================================================------------] 84.3% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=====================================================================----------] 86.3% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [======================================================================---------] 88.2% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [========================================================================-------] 90.2% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=========================================================================------] 92.2% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===========================================================================----] 94.1% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [============================================================================---] 96.1% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [==============================================================================-] 98.0% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [================================================================================] 100.0% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)
+index
+2024-03-22    1.037741
+2024-03-25    1.037737
+2024-03-26    1.037733
+2024-03-27    1.037728
+2024-03-28    1.037724
+Freq: B, dtype: float64
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:37:39 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:37:39 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:37:39 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:37:39 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating combined forecast for SOFR
+2026-07-16 10:37:39 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+2026-07-16 10:37:39 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+2026-07-16 10:37:39 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac8
+2026-07-16 10:37:39 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac8
+2026-07-16 10:37:40 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating forecast weights for SOFR
+2026-07-16 10:37:40 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} You need an accounts stage in the system to estimate forecast costs for SOFR ewmac32. Using costs of zero
+2026-07-16 10:37:40 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} You need an accounts stage in the system to estimate forecast costs for SOFR ewmac8. Using costs of zero
+2026-07-16 10:37:40 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SOFR
+2026-07-16 10:37:40 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Non-nested dict of forecast weights for SOFR {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:37:40 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Using fixed FDM multiplier of 1.100 for SOFR
+2026-07-16 10:37:40 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} No mapping applied for SOFR
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:37:40 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:37:40 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:37:40 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:37:40 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily volatility for SOFR
+2026-07-16 10:37:40 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+index
+2024-03-22    0.065581
+2024-03-25    0.064913
+2024-03-26    0.063676
+2024-03-27    0.062956
+2024-03-28    0.061778
+Freq: B, dtype: float64
+index
+2024-03-22    2410.250
+2024-03-25    2409.125
+2024-03-26    2409.500
+2024-03-27    2410.500
+2024-03-28    2410.125
+Freq: B, Name: PRICE, dtype: float64
+index
+1984-03-23    87.130
+1984-03-26    87.200
+1984-03-27    87.180
+1984-03-28    87.180
+1984-03-29    87.150
+               ...
+2024-03-22    96.410
+2024-03-25    96.365
+2024-03-26    96.380
+2024-03-27    96.420
+2024-03-28    96.405
+Freq: B, Name: PRICE, Length: 10440, dtype: float64
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument value vol for SOFR
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument currency vol for SOFR
+index
+2024-03-22    123.552537
+2024-03-25    123.829515
+2024-03-26    121.712095
+2024-03-27    119.934580
+2024-03-28    117.990128
+Freq: B, dtype: float64
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating volatility scalar for SOFR
+index
+2024-03-22    63.232211
+2024-03-25    63.090774
+2024-03-26    64.188362
+2024-03-27    65.139679
+2024-03-28    66.213167
+Freq: B, dtype: float64
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Getting vol target
+{'base_currency': 'GBP', 'percentage_vol_target': 25.0, 'notional_trading_capital': 500000.0, 'annual_cash_vol_target': 125000.0, 'daily_cash_vol_target': 7812.5}
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating subsystem position for SOFR
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating combined forecast for SOFR
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac8
+2026-07-16 10:37:41 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac8
+2026-07-16 10:37:42 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating forecast weights for SOFR
+2026-07-16 10:37:42 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} You need an accounts stage in the system to estimate forecast costs for SOFR ewmac32. Using costs of zero
+2026-07-16 10:37:42 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} You need an accounts stage in the system to estimate forecast costs for SOFR ewmac8. Using costs of zero
+2026-07-16 10:37:42 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SOFR
+2026-07-16 10:37:42 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Non-nested dict of forecast weights for SOFR {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:37:42 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Using fixed FDM multiplier of 1.100 for SOFR
+2026-07-16 10:37:42 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} No mapping applied for SOFR
+index
+2024-03-22   -17.835156
+2024-03-25   -17.040272
+2024-03-26   -15.821021
+2024-03-27   -12.662081
+2024-03-28   -11.010099
+Freq: B, dtype: float64
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:37:42 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:37:42 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:37:42 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:37:42 INFO base_system {'stage': 'portfolio'} Calculating instrument weights
+2026-07-16 10:37:42 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:37:42 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:37:42 DEBUG base_system Following instruments are marked as 'bad_markets':  ['BAD_EXAMPLE']
+2026-07-16 10:37:42 DEBUG base_system Following instruments have restricted trading:  ['RESTRICTED_EXAMPLE']
+2026-07-16 10:37:42 DEBUG base_system Following instruments marked as not trading []
+2026-07-16 10:37:42 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating subsystem position for CORN
+2026-07-16 10:37:42 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating volatility scalar for CORN
+2026-07-16 10:37:42 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument value vol for CORN
+2026-07-16 10:37:42 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument currency vol for CORN
+2026-07-16 10:37:43 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily volatility for CORN
+2026-07-16 10:37:43 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:37:43 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating combined forecast for CORN
+2026-07-16 10:37:43 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac32
+2026-07-16 10:37:43 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac32
+2026-07-16 10:37:44 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac8
+2026-07-16 10:37:44 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac8
+2026-07-16 10:37:44 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating forecast weights for CORN
+2026-07-16 10:37:45 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+2026-07-16 10:37:45 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+2026-07-16 10:37:45 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500_micro'} Calculating capped forecast for SP500_micro ewmac32
+2026-07-16 10:37:45 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500_micro'} Calculating raw forecast SP500_micro for ewmac32
+2026-07-16 10:37:46 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac32
+2026-07-16 10:37:46 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac32
+2026-07-16 10:37:47 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:37:48 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:37:49 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac8
+2026-07-16 10:37:49 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac8
+2026-07-16 10:37:49 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500_micro'} Calculating capped forecast for SP500_micro ewmac8
+2026-07-16 10:37:49 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500_micro'} Calculating raw forecast SP500_micro for ewmac8
+2026-07-16 10:37:50 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac8
+2026-07-16 10:37:50 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac8
+2026-07-16 10:37:51 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for CORN
+2026-07-16 10:37:51 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Non-nested dict of forecast weights for CORN {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:37:51 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Using fixed FDM multiplier of 1.100 for CORN
+2026-07-16 10:37:51 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} No mapping applied for CORN
+2026-07-16 10:37:51 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating subsystem position for SOFR
+2026-07-16 10:37:51 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating volatility scalar for SOFR
+2026-07-16 10:37:51 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument value vol for SOFR
+2026-07-16 10:37:51 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument currency vol for SOFR
+2026-07-16 10:37:52 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily volatility for SOFR
+2026-07-16 10:37:52 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:37:52 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating combined forecast for SOFR
+2026-07-16 10:37:52 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating forecast weights for SOFR
+2026-07-16 10:37:52 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:37:53 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:37:53 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SOFR
+2026-07-16 10:37:53 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Non-nested dict of forecast weights for SOFR {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:37:53 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Using fixed FDM multiplier of 1.100 for SOFR
+2026-07-16 10:37:53 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} No mapping applied for SOFR
+2026-07-16 10:37:53 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating subsystem position for SP500_micro
+2026-07-16 10:37:53 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating volatility scalar for SP500_micro
+2026-07-16 10:37:53 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating instrument value vol for SP500_micro
+2026-07-16 10:37:53 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating instrument currency vol for SP500_micro
+2026-07-16 10:37:54 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily volatility for SP500_micro
+2026-07-16 10:37:54 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:37:54 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Calculating combined forecast for SP500_micro
+2026-07-16 10:37:54 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Calculating forecast weights for SP500_micro
+2026-07-16 10:37:54 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:37:55 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:37:55 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SP500_micro
+2026-07-16 10:37:55 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Non-nested dict of forecast weights for SP500_micro {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:37:56 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Using fixed FDM multiplier of 1.100 for SP500_micro
+2026-07-16 10:37:56 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} No mapping applied for SP500_micro
+2026-07-16 10:37:56 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating subsystem position for US10
+2026-07-16 10:37:56 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating volatility scalar for US10
+2026-07-16 10:37:56 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument value vol for US10
+2026-07-16 10:37:56 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument currency vol for US10
+2026-07-16 10:37:56 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily volatility for US10
+2026-07-16 10:37:56 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:37:57 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating combined forecast for US10
+2026-07-16 10:37:57 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating forecast weights for US10
+2026-07-16 10:37:57 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:37:57 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for US10
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Non-nested dict of forecast weights for US10 {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Using fixed FDM multiplier of 1.100 for US10
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} No mapping applied for US10
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'portfolio'} Following instruments will have zero weight in optimisation of instrument weights as they have no positions (possibly too expensive?) []
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'CORN'} Calculating pandl for subsystem for instrument CORN
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating buffers for CORN
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating forecast method buffers for CORN
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'CORN'} Calculating buffered subsystem positions
+2026-07-16 10:37:58 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:37:59 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Getting vol target
+2026-07-16 10:38:00 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SOFR'} Calculating pandl for subsystem for instrument SOFR
+2026-07-16 10:38:00 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating buffers for SOFR
+2026-07-16 10:38:00 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating forecast method buffers for SOFR
+2026-07-16 10:38:00 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SOFR'} Calculating buffered subsystem positions
+2026-07-16 10:38:00 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:38:01 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SP500_micro'} Calculating pandl for subsystem for instrument SP500_micro
+2026-07-16 10:38:01 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating buffers for SP500_micro
+2026-07-16 10:38:01 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating forecast method buffers for SP500_micro
+2026-07-16 10:38:01 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SP500_micro'} Calculating buffered subsystem positions
+2026-07-16 10:38:01 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:38:03 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'US10'} Calculating pandl for subsystem for instrument US10
+2026-07-16 10:38:03 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating buffers for US10
+2026-07-16 10:38:03 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating forecast method buffers for US10
+2026-07-16 10:38:03 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'US10'} Calculating buffered subsystem positions
+2026-07-16 10:38:03 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:38:13 INFO base_system {'stage': 'portfolio'} Calculating raw instrument weights
+2026-07-16 10:38:13 DEBUG base_system {'stage': 'portfolio'} Using only returns of asset for gross returns
+2026-07-16 10:38:13 DEBUG base_system {'stage': 'portfolio'} Using unpooled cost SR for asset
+  [--------------------------------------------------------------------------------] 0.0% Optimising weights (0.0/0.0/0.0 secs left/elapsed/total)  [================================================================================] 100.0% Optimising weights (0.0/0.0/0.0 secs left/elapsed/total)
+2026-07-16 10:38:13 DEBUG base_system {'stage': 'portfolio'} Following instruments will have zero weight in optimisation of instrument weights as they have no positions (possibly too expensive?) []
+                US10      CORN  SP500_micro      SOFR
+index
+2024-03-22  0.203747  0.297433     0.295391  0.203429
+2024-03-25  0.203747  0.297433     0.295391  0.203429
+2024-03-26  0.203747  0.297433     0.295391  0.203429
+2024-03-27  0.203747  0.297433     0.295391  0.203429
+2024-03-28  0.203747  0.297433     0.295391  0.203429
+2026-07-16 10:38:13 INFO base_system {'stage': 'portfolio'} Calculating instrument div. multiplier
+2026-07-16 10:38:13 INFO base_system {'stage': 'portfolio'} Calculating instrument correlations
+  [--------------------------------------------------------------------------------] 0.0% Estimating correlations (0.0/0.0/0.0 secs left/elapsed/total)  [=------------------------------------------------------------------------------] 2.0% Estimating correlations (0.0/0.0/0.0 secs left/elapsed/total)  [===----------------------------------------------------------------------------] 3.9% Estimating correlations (0.0/0.0/0.0 secs left/elapsed/total)  [====---------------------------------------------------------------------------] 5.9% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [======-------------------------------------------------------------------------] 7.8% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=======------------------------------------------------------------------------] 9.8% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=========----------------------------------------------------------------------] 11.8% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [==========---------------------------------------------------------------------] 13.7% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [============-------------------------------------------------------------------] 15.7% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [==============-----------------------------------------------------------------] 17.6% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [===============----------------------------------------------------------------] 19.6% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=================--------------------------------------------------------------] 21.6% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [==================-------------------------------------------------------------] 23.5% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [====================-----------------------------------------------------------] 25.5% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=====================----------------------------------------------------------] 27.5% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=======================--------------------------------------------------------] 29.4% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [=========================------------------------------------------------------] 31.4% Estimating correlations (0.1/0.0/0.1 secs left/elapsed/total)  [==========================-----------------------------------------------------] 33.3% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [============================---------------------------------------------------] 35.3% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [=============================--------------------------------------------------] 37.3% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [===============================------------------------------------------------] 39.2% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [================================-----------------------------------------------] 41.2% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [==================================---------------------------------------------] 43.1% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [====================================-------------------------------------------] 45.1% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [=====================================------------------------------------------] 47.1% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [=======================================----------------------------------------] 49.0% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [========================================---------------------------------------] 51.0% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [==========================================-------------------------------------] 52.9% Estimating correlations (0.0/0.0/0.1 secs left/elapsed/total)  [===========================================------------------------------------] 54.9% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=============================================----------------------------------] 56.9% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===============================================--------------------------------] 58.8% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [================================================-------------------------------] 60.8% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [==================================================-----------------------------] 62.7% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===================================================----------------------------] 64.7% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=====================================================--------------------------] 66.7% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [======================================================-------------------------] 68.6% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [========================================================-----------------------] 70.6% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [==========================================================---------------------] 72.5% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===========================================================--------------------] 74.5% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=============================================================------------------] 76.5% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [==============================================================-----------------] 78.4% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [================================================================---------------] 80.4% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=================================================================--------------] 82.4% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===================================================================------------] 84.3% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=====================================================================----------] 86.3% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [======================================================================---------] 88.2% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [========================================================================-------] 90.2% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [=========================================================================------] 92.2% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [===========================================================================----] 94.1% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [============================================================================---] 96.1% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [==============================================================================-] 98.0% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)  [================================================================================] 100.0% Estimating correlations (0.0/0.1/0.1 secs left/elapsed/total)
+index
+2024-03-22    1.650486
+2024-03-25    1.650487
+2024-03-26    1.650487
+2024-03-27    1.650488
+2024-03-28    1.650488
+Freq: B, dtype: float64
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:38:15 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:38:15 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:38:15 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:38:15 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating notional position for SOFR
+2026-07-16 10:38:15 INFO base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating instrument weights
+2026-07-16 10:38:15 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating raw instrument weights
+2026-07-16 10:38:15 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:38:15 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:38:15 DEBUG base_system Following instruments are marked as 'bad_markets':  ['BAD_EXAMPLE']
+2026-07-16 10:38:15 DEBUG base_system Following instruments have restricted trading:  ['RESTRICTED_EXAMPLE']
+2026-07-16 10:38:15 DEBUG base_system Following instruments marked as not trading []
+2026-07-16 10:38:15 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating subsystem position for CORN
+2026-07-16 10:38:15 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating volatility scalar for CORN
+2026-07-16 10:38:15 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument value vol for CORN
+2026-07-16 10:38:15 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument currency vol for CORN
+2026-07-16 10:38:16 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily volatility for CORN
+2026-07-16 10:38:16 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:38:17 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating combined forecast for CORN
+2026-07-16 10:38:17 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac32
+2026-07-16 10:38:17 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac32
+2026-07-16 10:38:17 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac8
+2026-07-16 10:38:17 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac8
+2026-07-16 10:38:18 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating forecast weights for CORN
+2026-07-16 10:38:18 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} You need an accounts stage in the system to estimate forecast costs for CORN ewmac32. Using costs of zero
+2026-07-16 10:38:18 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} You need an accounts stage in the system to estimate forecast costs for CORN ewmac8. Using costs of zero
+2026-07-16 10:38:18 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for CORN
+2026-07-16 10:38:18 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Non-nested dict of forecast weights for CORN {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Using fixed FDM multiplier of 1.100 for CORN
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} No mapping applied for CORN
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating subsystem position for SOFR
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating volatility scalar for SOFR
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument value vol for SOFR
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument currency vol for SOFR
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily volatility for SOFR
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating combined forecast for SOFR
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+2026-07-16 10:38:19 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+2026-07-16 10:38:20 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac8
+2026-07-16 10:38:20 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac8
+2026-07-16 10:38:21 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating forecast weights for SOFR
+2026-07-16 10:38:21 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} You need an accounts stage in the system to estimate forecast costs for SOFR ewmac32. Using costs of zero
+2026-07-16 10:38:21 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} You need an accounts stage in the system to estimate forecast costs for SOFR ewmac8. Using costs of zero
+2026-07-16 10:38:21 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SOFR
+2026-07-16 10:38:21 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Non-nested dict of forecast weights for SOFR {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:38:21 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Using fixed FDM multiplier of 1.100 for SOFR
+2026-07-16 10:38:21 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} No mapping applied for SOFR
+2026-07-16 10:38:21 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating subsystem position for SP500
+2026-07-16 10:38:21 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating volatility scalar for SP500
+2026-07-16 10:38:21 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating instrument value vol for SP500
+2026-07-16 10:38:21 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating instrument currency vol for SP500
+2026-07-16 10:38:22 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily volatility for SP500
+2026-07-16 10:38:22 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily prices for SP500
+2026-07-16 10:38:22 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Calculating combined forecast for SP500
+2026-07-16 10:38:22 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500'} Calculating capped forecast for SP500 ewmac32
+2026-07-16 10:38:22 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500'} Calculating raw forecast SP500 for ewmac32
+2026-07-16 10:38:23 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500'} Calculating capped forecast for SP500 ewmac8
+2026-07-16 10:38:23 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500'} Calculating raw forecast SP500 for ewmac8
+2026-07-16 10:38:23 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Calculating forecast weights for SP500
+2026-07-16 10:38:23 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} You need an accounts stage in the system to estimate forecast costs for SP500 ewmac32. Using costs of zero
+2026-07-16 10:38:23 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} You need an accounts stage in the system to estimate forecast costs for SP500 ewmac8. Using costs of zero
+2026-07-16 10:38:23 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SP500
+2026-07-16 10:38:23 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Non-nested dict of forecast weights for SP500 {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:38:24 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Using fixed FDM multiplier of 1.100 for SP500
+2026-07-16 10:38:24 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} No mapping applied for SP500
+2026-07-16 10:38:24 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating subsystem position for US10
+2026-07-16 10:38:24 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating volatility scalar for US10
+2026-07-16 10:38:24 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument value vol for US10
+2026-07-16 10:38:24 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument currency vol for US10
+2026-07-16 10:38:24 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily volatility for US10
+2026-07-16 10:38:24 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:38:25 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating combined forecast for US10
+2026-07-16 10:38:25 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac32
+2026-07-16 10:38:25 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac32
+2026-07-16 10:38:26 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac8
+2026-07-16 10:38:26 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac8
+2026-07-16 10:38:26 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating forecast weights for US10
+2026-07-16 10:38:26 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'US10'} You need an accounts stage in the system to estimate forecast costs for US10 ewmac32. Using costs of zero
+2026-07-16 10:38:26 WARNING base_system {'stage': 'combForecast', 'instrument_code': 'US10'} You need an accounts stage in the system to estimate forecast costs for US10 ewmac8. Using costs of zero
+2026-07-16 10:38:26 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for US10
+2026-07-16 10:38:26 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Non-nested dict of forecast weights for US10 {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Using fixed FDM multiplier of 1.100 for US10
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} No mapping applied for US10
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Following instruments will have zero weight in optimisation of instrument weights as they have no positions (possibly too expensive?) []
+2026-07-16 10:38:27 INFO base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Using fixed diversification multiplier 1.500000
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} No risk overlay in config: won't apply risk scaling
+index
+2024-03-22   -10.701093
+2024-03-25   -10.224163
+2024-03-26    -9.492612
+2024-03-27    -7.597249
+2024-03-28    -6.606060
+Freq: B, dtype: float64
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:38:27 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:38:27 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:38:27 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:38:27 INFO base_system {'stage': 'accounts'} Calculating pandl for portfolio
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'positionSize'} Getting vol target
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'CORN'} Calculating pandl for instrument for CORN
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'CORN'} Calculating notional position for CORN
+2026-07-16 10:38:27 INFO base_system {'stage': 'portfolio', 'instrument_code': 'CORN'} Calculating instrument weights
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'CORN'} Calculating raw instrument weights
+2026-07-16 10:38:27 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:38:27 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:38:27 DEBUG base_system Following instruments are marked as 'bad_markets':  ['BAD_EXAMPLE']
+2026-07-16 10:38:27 DEBUG base_system Following instruments have restricted trading:  ['RESTRICTED_EXAMPLE']
+2026-07-16 10:38:27 DEBUG base_system Following instruments marked as not trading []
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating subsystem position for CORN
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating volatility scalar for CORN
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument value vol for CORN
+2026-07-16 10:38:27 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument currency vol for CORN
+2026-07-16 10:38:28 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily volatility for CORN
+2026-07-16 10:38:28 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:38:29 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating combined forecast for CORN
+2026-07-16 10:38:29 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac32
+2026-07-16 10:38:29 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac32
+2026-07-16 10:38:29 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac8
+2026-07-16 10:38:29 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac8
+2026-07-16 10:38:30 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating forecast weights for CORN
+2026-07-16 10:38:30 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+2026-07-16 10:38:30 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+2026-07-16 10:38:31 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500'} Calculating capped forecast for SP500 ewmac32
+2026-07-16 10:38:31 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500'} Calculating raw forecast SP500 for ewmac32
+2026-07-16 10:38:32 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac32
+2026-07-16 10:38:32 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac32
+2026-07-16 10:38:32 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:38:33 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:38:34 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac8
+2026-07-16 10:38:34 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac8
+2026-07-16 10:38:35 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500'} Calculating capped forecast for SP500 ewmac8
+2026-07-16 10:38:35 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500'} Calculating raw forecast SP500 for ewmac8
+2026-07-16 10:38:35 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac8
+2026-07-16 10:38:35 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac8
+2026-07-16 10:38:36 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for CORN
+2026-07-16 10:38:36 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Non-nested dict of forecast weights for CORN {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:38:37 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Using fixed FDM multiplier of 1.100 for CORN
+2026-07-16 10:38:37 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} No mapping applied for CORN
+2026-07-16 10:38:37 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating subsystem position for SOFR
+2026-07-16 10:38:37 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating volatility scalar for SOFR
+2026-07-16 10:38:37 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument value vol for SOFR
+2026-07-16 10:38:37 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument currency vol for SOFR
+2026-07-16 10:38:37 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily volatility for SOFR
+2026-07-16 10:38:37 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:38:38 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating combined forecast for SOFR
+2026-07-16 10:38:38 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating forecast weights for SOFR
+2026-07-16 10:38:38 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:38:38 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SOFR
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Non-nested dict of forecast weights for SOFR {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Using fixed FDM multiplier of 1.100 for SOFR
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} No mapping applied for SOFR
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating subsystem position for SP500
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating volatility scalar for SP500
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating instrument value vol for SP500
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating instrument currency vol for SP500
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily volatility for SP500
+2026-07-16 10:38:39 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily prices for SP500
+2026-07-16 10:38:40 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Calculating combined forecast for SP500
+2026-07-16 10:38:40 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Calculating forecast weights for SP500
+2026-07-16 10:38:40 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily prices for SP500
+2026-07-16 10:38:40 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily prices for SP500
+2026-07-16 10:38:41 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SP500
+2026-07-16 10:38:41 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Non-nested dict of forecast weights for SP500 {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:38:41 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Using fixed FDM multiplier of 1.100 for SP500
+2026-07-16 10:38:41 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} No mapping applied for SP500
+2026-07-16 10:38:41 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating subsystem position for US10
+2026-07-16 10:38:41 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating volatility scalar for US10
+2026-07-16 10:38:41 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument value vol for US10
+2026-07-16 10:38:41 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument currency vol for US10
+2026-07-16 10:38:42 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily volatility for US10
+2026-07-16 10:38:42 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:38:42 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating combined forecast for US10
+2026-07-16 10:38:42 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating forecast weights for US10
+2026-07-16 10:38:42 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:38:43 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:38:43 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for US10
+2026-07-16 10:38:43 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Non-nested dict of forecast weights for US10 {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:38:44 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Using fixed FDM multiplier of 1.100 for US10
+2026-07-16 10:38:44 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} No mapping applied for US10
+2026-07-16 10:38:44 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'CORN'} Following instruments will have zero weight in optimisation of instrument weights as they have no positions (possibly too expensive?) []
+2026-07-16 10:38:44 INFO base_system {'stage': 'portfolio', 'instrument_code': 'CORN'} Using fixed diversification multiplier 1.500000
+2026-07-16 10:38:44 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'CORN'} No risk overlay in config: won't apply risk scaling
+2026-07-16 10:38:44 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'CORN'} Calculating buffers for CORN
+2026-07-16 10:38:44 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'CORN'} Calculating forecast method buffers for CORN
+2026-07-16 10:38:44 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'CORN'} Calculating buffered positions
+2026-07-16 10:38:44 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'CORN'} Calculating pandl for instrument for CORN
+2026-07-16 10:38:44 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:38:46 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SOFR'} Calculating pandl for instrument for SOFR
+2026-07-16 10:38:46 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating notional position for SOFR
+2026-07-16 10:38:46 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} No risk overlay in config: won't apply risk scaling
+2026-07-16 10:38:46 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating buffers for SOFR
+2026-07-16 10:38:46 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating forecast method buffers for SOFR
+2026-07-16 10:38:46 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SOFR'} Calculating buffered positions
+2026-07-16 10:38:46 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SOFR'} Calculating pandl for instrument for SOFR
+2026-07-16 10:38:46 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:38:47 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SP500'} Calculating pandl for instrument for SP500
+2026-07-16 10:38:47 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SP500'} Calculating notional position for SP500
+2026-07-16 10:38:47 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SP500'} No risk overlay in config: won't apply risk scaling
+2026-07-16 10:38:47 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SP500'} Calculating buffers for SP500
+2026-07-16 10:38:47 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SP500'} Calculating forecast method buffers for SP500
+2026-07-16 10:38:47 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SP500'} Calculating buffered positions
+2026-07-16 10:38:47 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'SP500'} Calculating pandl for instrument for SP500
+2026-07-16 10:38:47 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily prices for SP500
+2026-07-16 10:38:49 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'US10'} Calculating pandl for instrument for US10
+2026-07-16 10:38:49 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'US10'} Calculating notional position for US10
+2026-07-16 10:38:49 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'US10'} No risk overlay in config: won't apply risk scaling
+2026-07-16 10:38:49 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'US10'} Calculating buffers for US10
+2026-07-16 10:38:49 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'US10'} Calculating forecast method buffers for US10
+2026-07-16 10:38:49 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'US10'} Calculating buffered positions
+2026-07-16 10:38:49 DEBUG base_system {'stage': 'accounts', 'instrument_code': 'US10'} Calculating pandl for instrument for US10
+2026-07-16 10:38:49 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+[[('min', '-17.16'), ('max', '20.08'), ('median', '0.006179'), ('mean', '0.06471'), ('std', '1.82'), ('skew', '0.03531'), ('ann_mean', '16.57'), ('ann_std', '29.12'), ('sharpe', '0.5688'), ('sortino', '0.7433'), ('avg_drawdown', '-24.21'), ('time_in_drawdown', '0.9692'), ('calmar', '0.2289'), ('avg_return_to_drawdown', '0.6842'), ('avg_loss', '-1.132'), ('avg_gain', '1.224'), ('gaintolossratio', '1.081'), ('profitfactor', '1.118'), ('hitrate', '0.5083'), ('t_stat', '4.119'), ('p_value', '3.833e-05')], ('You can also plot / print:', ['rolling_ann_std', 'drawdown', 'curve', 'percent'])]
+[[('min', '-17.16'), ('max', '20.08'), ('median', '0.009472'), ('mean', '0.06933'), ('std', '1.82'), ('skew', '0.03646'), ('ann_mean', '17.75'), ('ann_std', '29.12'), ('sharpe', '0.6094'), ('sortino', '0.7901'), ('avg_drawdown', '-22.88'), ('time_in_drawdown', '0.9664'), ('calmar', '0.249'), ('avg_return_to_drawdown', '0.7759'), ('avg_loss', '-1.188'), ('avg_gain', '1.226'), ('gaintolossratio', '1.032'), ('profitfactor', '1.126'), ('hitrate', '0.522'), ('t_stat', '4.413'), ('p_value', '1.028e-05')], ('You can also plot / print:', ['rolling_ann_std', 'drawdown', 'curve', 'percent'])]
+[[('min', '-17.16'), ('max', '20.08'), ('median', '0.006179'), ('mean', '0.06471'), ('std', '1.82'), ('skew', '0.03531'), ('ann_mean', '16.57'), ('ann_std', '29.12'), ('sharpe', '0.5688'), ('sortino', '0.7433'), ('avg_drawdown', '-24.21'), ('time_in_drawdown', '0.9692'), ('calmar', '0.2289'), ('avg_return_to_drawdown', '0.6842'), ('avg_loss', '-1.132'), ('avg_gain', '1.224'), ('gaintolossratio', '1.081'), ('profitfactor', '1.118'), ('hitrate', '0.5083'), ('t_stat', '4.119'), ('p_value', '3.833e-05')], ('You can also plot / print:', ['rolling_ann_std', 'drawdown', 'curve', 'percent'])]
+Config with elements: base_currency, forecast_div_multiplier, forecast_scalars, forecast_weights, instrument_div_multiplier, instrument_weights, notional_trading_capital, percentage_vol_target, trading_rules
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:38:56 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:38:56 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:38:56 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:38:56 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating notional position for SOFR
+2026-07-16 10:38:56 INFO base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating instrument weights
+2026-07-16 10:38:56 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating raw instrument weights
+2026-07-16 10:38:56 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:38:56 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:38:56 DEBUG base_system Following instruments are marked as 'bad_markets':  ['BAD_EXAMPLE']
+2026-07-16 10:38:56 DEBUG base_system Following instruments have restricted trading:  ['RESTRICTED_EXAMPLE']
+2026-07-16 10:38:56 DEBUG base_system Following instruments marked as not trading []
+2026-07-16 10:38:56 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating subsystem position for CORN
+2026-07-16 10:38:56 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating volatility scalar for CORN
+2026-07-16 10:38:56 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument value vol for CORN
+2026-07-16 10:38:56 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument currency vol for CORN
+2026-07-16 10:38:57 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily volatility for CORN
+2026-07-16 10:38:57 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:38:57 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating combined forecast for CORN
+2026-07-16 10:38:57 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac32
+2026-07-16 10:38:57 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac32
+2026-07-16 10:38:58 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac8
+2026-07-16 10:38:58 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac8
+2026-07-16 10:38:59 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating forecast weights for CORN
+2026-07-16 10:38:59 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+2026-07-16 10:38:59 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+2026-07-16 10:39:00 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500_micro'} Calculating capped forecast for SP500_micro ewmac32
+2026-07-16 10:39:00 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500_micro'} Calculating raw forecast SP500_micro for ewmac32
+2026-07-16 10:39:01 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac32
+2026-07-16 10:39:01 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac32
+2026-07-16 10:39:02 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:39:02 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:39:03 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac8
+2026-07-16 10:39:03 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac8
+2026-07-16 10:39:04 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500_micro'} Calculating capped forecast for SP500_micro ewmac8
+2026-07-16 10:39:04 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500_micro'} Calculating raw forecast SP500_micro for ewmac8
+2026-07-16 10:39:05 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac8
+2026-07-16 10:39:05 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac8
+2026-07-16 10:39:06 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for CORN
+2026-07-16 10:39:06 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Non-nested dict of forecast weights for CORN {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:39:06 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Using fixed FDM multiplier of 1.100 for CORN
+2026-07-16 10:39:06 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} No mapping applied for CORN
+2026-07-16 10:39:06 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating subsystem position for SOFR
+2026-07-16 10:39:06 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating volatility scalar for SOFR
+2026-07-16 10:39:06 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument value vol for SOFR
+2026-07-16 10:39:06 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument currency vol for SOFR
+2026-07-16 10:39:07 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily volatility for SOFR
+2026-07-16 10:39:07 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:39:07 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating combined forecast for SOFR
+2026-07-16 10:39:07 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating forecast weights for SOFR
+2026-07-16 10:39:07 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:39:07 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:39:08 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SOFR
+2026-07-16 10:39:08 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Non-nested dict of forecast weights for SOFR {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:39:08 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Using fixed FDM multiplier of 1.100 for SOFR
+2026-07-16 10:39:08 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} No mapping applied for SOFR
+2026-07-16 10:39:08 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating subsystem position for SP500_micro
+2026-07-16 10:39:08 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating volatility scalar for SP500_micro
+2026-07-16 10:39:08 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating instrument value vol for SP500_micro
+2026-07-16 10:39:08 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500_micro'} Calculating instrument currency vol for SP500_micro
+2026-07-16 10:39:09 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily volatility for SP500_micro
+2026-07-16 10:39:09 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:39:09 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Calculating combined forecast for SP500_micro
+2026-07-16 10:39:09 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Calculating forecast weights for SP500_micro
+2026-07-16 10:39:09 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:39:10 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500_micro'} Calculating daily prices for SP500_micro
+2026-07-16 10:39:10 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SP500_micro
+2026-07-16 10:39:10 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Non-nested dict of forecast weights for SP500_micro {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:39:10 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} Using fixed FDM multiplier of 1.100 for SP500_micro
+2026-07-16 10:39:10 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500_micro'} No mapping applied for SP500_micro
+2026-07-16 10:39:10 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating subsystem position for US10
+2026-07-16 10:39:10 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating volatility scalar for US10
+2026-07-16 10:39:10 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument value vol for US10
+2026-07-16 10:39:10 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument currency vol for US10
+2026-07-16 10:39:11 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily volatility for US10
+2026-07-16 10:39:11 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:39:11 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating combined forecast for US10
+2026-07-16 10:39:11 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating forecast weights for US10
+2026-07-16 10:39:11 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:39:12 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:39:12 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for US10
+2026-07-16 10:39:12 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Non-nested dict of forecast weights for US10 {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:39:13 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Using fixed FDM multiplier of 1.100 for US10
+2026-07-16 10:39:13 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} No mapping applied for US10
+2026-07-16 10:39:13 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Following instruments will have zero weight in optimisation of instrument weights as they have no positions (possibly too expensive?) []
+2026-07-16 10:39:13 INFO base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Using fixed diversification multiplier 1.500000
+2026-07-16 10:39:13 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} No risk overlay in config: won't apply risk scaling
+index
+2024-03-22   -10.701093
+2024-03-25   -10.224163
+2024-03-26    -9.492612
+2024-03-27    -7.597249
+2024-03-28    -6.606060
+Freq: B, dtype: float64
+Config with elements: base_currency, forecast_div_multiplier, forecast_weights, instrument_div_multiplier, instrument_weights, notional_trading_capital, percentage_vol_target, trading_rules
+Private configuration '/app/private/private_config.yaml' is missing or misconfigured; no problem if running in sim mode
+2026-07-16 10:39:13 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:39:13 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:39:13 DEBUG base_system Following instruments removed entirely from sim: ['Another_thing', 'EXAMPLE', 'bad_thing']
+2026-07-16 10:39:13 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac32
+index
+2024-03-22   -0.349853
+2024-03-25   -0.378965
+2024-03-26   -0.394422
+2024-03-27   -0.381021
+2024-03-28   -0.378662
+Freq: B, Name: price, dtype: float64
+2026-07-16 10:39:14 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SOFR'} Calculating raw forecast SOFR for ewmac8
+index
+2024-03-22   -0.792683
+2024-03-25   -0.737074
+2024-03-26   -0.648340
+2024-03-27   -0.476329
+2024-03-28   -0.381107
+Freq: B, Name: price, dtype: float64
+2026-07-16 10:39:14 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac32
+index
+2024-03-22   -0.927110
+2024-03-25   -1.004257
+2024-03-26   -1.045217
+2024-03-27   -1.009705
+2024-03-28   -1.003454
+Freq: B, dtype: float64
+index
+1984-03-23    2.65
+1984-03-26    2.65
+1984-03-27    2.65
+1984-03-28    2.65
+1984-03-29    2.65
+              ...
+2024-03-22    2.65
+2024-03-25    2.65
+2024-03-26    2.65
+2024-03-27    2.65
+2024-03-28    2.65
+Freq: B, Length: 10440, dtype: float64
+2026-07-16 10:39:14 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating combined forecast for SOFR
+2026-07-16 10:39:14 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SOFR'} Calculating capped forecast for SOFR ewmac8
+2026-07-16 10:39:14 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Calculating forecast weights for SOFR
+2026-07-16 10:39:14 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac32
+2026-07-16 10:39:14 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac32
+2026-07-16 10:39:15 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500'} Calculating capped forecast for SP500 ewmac32
+2026-07-16 10:39:15 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500'} Calculating raw forecast SP500 for ewmac32
+2026-07-16 10:39:16 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac32
+2026-07-16 10:39:16 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac32
+2026-07-16 10:39:17 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:39:17 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:39:18 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily volatility for SOFR
+2026-07-16 10:39:18 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SOFR'} Calculating daily prices for SOFR
+2026-07-16 10:39:18 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'CORN'} Calculating capped forecast for CORN ewmac8
+2026-07-16 10:39:18 DEBUG base_system {'stage': 'rules', 'instrument_code': 'CORN'} Calculating raw forecast CORN for ewmac8
+2026-07-16 10:39:20 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'SP500'} Calculating capped forecast for SP500 ewmac8
+2026-07-16 10:39:20 DEBUG base_system {'stage': 'rules', 'instrument_code': 'SP500'} Calculating raw forecast SP500 for ewmac8
+2026-07-16 10:39:20 DEBUG base_system {'stage': 'forecastScaleCap', 'instrument_code': 'US10'} Calculating capped forecast for US10 ewmac8
+2026-07-16 10:39:20 DEBUG base_system {'stage': 'rules', 'instrument_code': 'US10'} Calculating raw forecast US10 for ewmac8
+2026-07-16 10:39:21 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SOFR
+2026-07-16 10:39:21 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Non-nested dict of forecast weights for SOFR {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:39:21 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} Using fixed FDM multiplier of 1.100 for SOFR
+2026-07-16 10:39:21 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SOFR'} No mapping applied for SOFR
+index
+2024-03-22   -2.820581
+2024-03-25   -2.700913
+2024-03-26   -2.464780
+2024-03-27   -1.943835
+2024-03-28   -1.662826
+Freq: B, dtype: float64
+            ewmac32  ewmac8
+index
+2024-03-22      0.5     0.5
+2024-03-25      0.5     0.5
+2024-03-26      0.5     0.5
+2024-03-27      0.5     0.5
+2024-03-28      0.5     0.5
+2026-07-16 10:39:21 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating subsystem position for SOFR
+2026-07-16 10:39:21 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating volatility scalar for SOFR
+2026-07-16 10:39:21 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument value vol for SOFR
+2026-07-16 10:39:21 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SOFR'} Calculating instrument currency vol for SOFR
+index
+2024-03-22   -17.835156
+2024-03-25   -17.040272
+2024-03-26   -15.821021
+2024-03-27   -12.662081
+2024-03-28   -11.010099
+Freq: B, dtype: float64
+2026-07-16 10:39:22 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating notional position for SOFR
+2026-07-16 10:39:22 INFO base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating instrument weights
+2026-07-16 10:39:22 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Calculating raw instrument weights
+2026-07-16 10:39:22 DEBUG base_system Following instruments are 'duplicate_markets' ['Another_thing', 'bad_thing']
+2026-07-16 10:39:22 DEBUG base_system Following instruments are marked as 'ignore_instruments': not included: ['EXAMPLE']
+2026-07-16 10:39:22 DEBUG base_system Following instruments are marked as 'bad_markets':  ['BAD_EXAMPLE']
+2026-07-16 10:39:22 DEBUG base_system Following instruments have restricted trading:  ['RESTRICTED_EXAMPLE']
+2026-07-16 10:39:22 DEBUG base_system Following instruments marked as not trading []
+2026-07-16 10:39:22 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating subsystem position for CORN
+2026-07-16 10:39:22 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating volatility scalar for CORN
+2026-07-16 10:39:22 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument value vol for CORN
+2026-07-16 10:39:22 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'CORN'} Calculating instrument currency vol for CORN
+2026-07-16 10:39:23 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily volatility for CORN
+2026-07-16 10:39:23 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:39:23 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating combined forecast for CORN
+2026-07-16 10:39:23 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Calculating forecast weights for CORN
+2026-07-16 10:39:23 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:39:24 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'CORN'} Calculating daily prices for CORN
+2026-07-16 10:39:24 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for CORN
+2026-07-16 10:39:24 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Non-nested dict of forecast weights for CORN {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:39:25 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} Using fixed FDM multiplier of 1.100 for CORN
+2026-07-16 10:39:25 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'CORN'} No mapping applied for CORN
+2026-07-16 10:39:25 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating subsystem position for SP500
+2026-07-16 10:39:25 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating volatility scalar for SP500
+2026-07-16 10:39:25 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating instrument value vol for SP500
+2026-07-16 10:39:25 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'SP500'} Calculating instrument currency vol for SP500
+2026-07-16 10:39:25 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily volatility for SP500
+2026-07-16 10:39:25 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily prices for SP500
+2026-07-16 10:39:26 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Calculating combined forecast for SP500
+2026-07-16 10:39:26 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Calculating forecast weights for SP500
+2026-07-16 10:39:26 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily prices for SP500
+2026-07-16 10:39:26 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'SP500'} Calculating daily prices for SP500
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for SP500
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Non-nested dict of forecast weights for SP500 {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} Using fixed FDM multiplier of 1.100 for SP500
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'SP500'} No mapping applied for SP500
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating subsystem position for US10
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating volatility scalar for US10
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument value vol for US10
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'positionSize', 'instrument_code': 'US10'} Calculating instrument currency vol for US10
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily volatility for US10
+2026-07-16 10:39:27 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:39:28 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating combined forecast for US10
+2026-07-16 10:39:28 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Calculating forecast weights for US10
+2026-07-16 10:39:28 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:39:28 DEBUG base_system {'stage': 'rawdata', 'instrument_code': 'US10'} Calculating daily prices for US10
+2026-07-16 10:39:29 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Only this set of rules ['ewmac32', 'ewmac8'] is cheap enough to trade for US10
+2026-07-16 10:39:29 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Non-nested dict of forecast weights for US10 {'ewmac8': 0.5, 'ewmac32': 0.5}: weights the same for all instruments
+2026-07-16 10:39:29 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} Using fixed FDM multiplier of 1.100 for US10
+2026-07-16 10:39:29 DEBUG base_system {'stage': 'combForecast', 'instrument_code': 'US10'} No mapping applied for US10
+2026-07-16 10:39:29 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Following instruments will have zero weight in optimisation of instrument weights as they have no positions (possibly too expensive?) []
+2026-07-16 10:39:30 INFO base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} Using fixed diversification multiplier 1.500000
+2026-07-16 10:39:30 DEBUG base_system {'stage': 'portfolio', 'instrument_code': 'SOFR'} No risk overlay in config: won't apply risk scaling
+index
+2024-03-22   -10.701093
+2024-03-25   -10.224163
+2024-03-26    -9.492612
+2024-03-27    -7.597249
+2024-03-28    -6.606060
+Freq: B, dtype: float64

@@ -1,6 +1,6 @@
 import matplotlib
 
-matplotlib.use("TkAgg")
+matplotlib.use("Agg")
 """
 
 Work up a minimum example of a trend following system
@@ -25,7 +25,7 @@ print(data)
 We get stuff out of data with methods
 """
 print(data.get_instrument_list())
-print(data.get_raw_price("EDOLLAR").tail(5))
+print(data.get_raw_price("SOFR").tail(5))
 """
 data can also behave in a dict like manner (though it's not a dict)
 """
@@ -49,7 +49,7 @@ We have extra futures data here
 
 """
 
-print(data.get_instrument_raw_carry_data("EDOLLAR").tail(6))
+print(data.get_instrument_raw_carry_data("SOFR").tail(6))
 """
 Technical note: csvFuturesSimData inherits from FuturesData which itself inherits
 from simData
@@ -103,10 +103,10 @@ ewmac2 = calc_ewmac_forecast(price, 16, 64)
 ewmac.columns = ["forecast"]
 print(ewmac.tail(5))
 
-from matplotlib.pyplot import show
+import matplotlib.pyplot as plt
 
 ewmac.plot()
-show()
+plt.savefig("asimpletradingrule_1.png")
 """
 Did we make money?
 """
@@ -118,6 +118,6 @@ account = pandl_for_instrument_forecast(forecast=ewmac, price=price)
 account.curve()
 
 account.curve().plot()
-show()
+plt.savefig("asimpletradingrule_2.png")
 
 print(account.percent.stats())
